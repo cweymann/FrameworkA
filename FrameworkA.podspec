@@ -9,10 +9,10 @@
 Pod::Spec.new do |s|
   s.name             = 'FrameworkA'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of FrameworkA.'
+  s.summary          = 'Demo issue with dependencies whith multiple frameworks.'
 
   s.description      = <<-DESC
-Sample framework that uses CocoaLumberjack.
+Sample framework that uses CocoaLumberjack. This is to demonstrate and reduce a dependency issue when linking frameworks with xcode 12
                        DESC
 
   s.homepage         = 'https://github.com/cweymann/FrameworkA.git'
@@ -21,6 +21,7 @@ Sample framework that uses CocoaLumberjack.
   s.source           = { :git => 'https://github.com/cweymann/FrameworkA.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
+  s.swift_version = '5.0'
 
   s.source_files = 'FrameworkA/Classes/**/*'
   s.dependency 'CocoaLumberjack/Swift'
