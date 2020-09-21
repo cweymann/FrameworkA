@@ -1,9 +1,11 @@
 use_frameworks!
 
-target 'FrameworkA_Example' do
-  pod 'FrameworkA_DependencyIssue', :path => '../'
+platform :ios, '8.0'
 
-  target 'FrameworkA_Tests' do
+target 'FrameworkA_Objc_DependencyIssue_Example' do
+  pod 'FrameworkA_Objc_DependencyIssue', :path => '../'
+
+  target 'FrameworkA_Objc_DependencyIssue_Tests' do
     inherit! :search_paths
 
     
