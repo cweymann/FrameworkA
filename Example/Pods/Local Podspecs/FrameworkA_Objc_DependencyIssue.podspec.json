@@ -1,0 +1,22 @@
+{
+  "name": "FrameworkA_Objc_DependencyIssue",
+  "version": "0.1.0",
+  "summary": "A short description of FrameworkA_Objc_DependencyIssue.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Claus Weymann/FrameworkA_Objc_DependencyIssue",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Claus Weymann": "c.weymann@avm.de"
+  },
+  "source": {
+    "git": "https://github.com/Claus Weymann/FrameworkA_Objc_DependencyIssue.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FrameworkA_Objc_DependencyIssue/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module Pods_FrameworkA_Objc_DependencyIssue_Tests {
+  umbrella header "Pods-FrameworkA_Objc_DependencyIssue_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

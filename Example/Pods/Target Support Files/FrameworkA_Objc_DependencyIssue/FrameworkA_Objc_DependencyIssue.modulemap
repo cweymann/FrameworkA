@@ -1,0 +1,6 @@
+framework module FrameworkA_Objc_DependencyIssue {
+  umbrella header "FrameworkA_Objc_DependencyIssue-umbrella.h"
+
+  export *
+  module * { export * }
+}
