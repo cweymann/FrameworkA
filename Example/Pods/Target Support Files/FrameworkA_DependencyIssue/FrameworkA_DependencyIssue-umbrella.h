@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double FrameworkAVersionNumber;
-FOUNDATION_EXPORT const unsigned char FrameworkAVersionString[];
+FOUNDATION_EXPORT double FrameworkA_DependencyIssueVersionNumber;
+FOUNDATION_EXPORT const unsigned char FrameworkA_DependencyIssueVersionString[];
 

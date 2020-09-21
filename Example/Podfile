@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'FrameworkA_Example' do
-  pod 'FrameworkA', :path => '../'
+  pod 'FrameworkA_DependencyIssue', :path => '../'
 
   target 'FrameworkA_Tests' do
     inherit! :search_paths

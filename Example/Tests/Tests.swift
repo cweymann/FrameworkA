@@ -1,5 +1,5 @@
 import XCTest
-import FrameworkA
+import FrameworkA_DependencyIssue
 
 class Tests: XCTestCase {
     

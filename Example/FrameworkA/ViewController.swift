@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import FrameworkA
+import FrameworkA_DependencyIssue
 
 class ViewController: UIViewController {
 

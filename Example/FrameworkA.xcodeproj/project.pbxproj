@@ -29,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		1747F4DBA21333CE436D03C2 /* Pods-FrameworkA_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkA_Tests.release.xcconfig"; path = "Target Support Files/Pods-FrameworkA_Tests/Pods-FrameworkA_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		37A74706251931E0002BEBB1 /* FrameworkA_DependencyIssue.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = FrameworkA_DependencyIssue.podspec; path = ../FrameworkA_DependencyIssue.podspec; sourceTree = "<group>"; };
 		4147F871A991169D02CC322D /* Pods-FrameworkA_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkA_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FrameworkA_Tests/Pods-FrameworkA_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* FrameworkA_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameworkA_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6C74D68DF502B92AFCFC4293 /* Pods-FrameworkA_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkA_Example.debug.xcconfig"; path = "Target Support Files/Pods-FrameworkA_Example/Pods-FrameworkA_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8A948130AE78DAA7150DD739 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		9D5F737E2E40D5F417A0A0DA /* FrameworkA.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FrameworkA.podspec; path = ../FrameworkA.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A133F897D0B0B17D6AB141F4 /* Pods-FrameworkA_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkA_Example.release.xcconfig"; path = "Target Support Files/Pods-FrameworkA_Example/Pods-FrameworkA_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CE065F9F506C422957CA2954 /* Pods_FrameworkA_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrameworkA_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8DA2EFCF510DD3B5F7628C /* Pods_FrameworkA_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrameworkA_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,7 +152,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				9D5F737E2E40D5F417A0A0DA /* FrameworkA.podspec */,
+				37A74706251931E0002BEBB1 /* FrameworkA_DependencyIssue.podspec */,
 				E680891203AB088C62A9BB85 /* README.md */,
 				8A948130AE78DAA7150DD739 /* LICENSE */,
 			);
@@ -292,12 +292,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FrameworkA_Example/Pods-FrameworkA_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
-				"${BUILT_PRODUCTS_DIR}/FrameworkA/FrameworkA.framework",
+				"${BUILT_PRODUCTS_DIR}/FrameworkA_DependencyIssue/FrameworkA_DependencyIssue.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FrameworkA.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FrameworkA_DependencyIssue.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
