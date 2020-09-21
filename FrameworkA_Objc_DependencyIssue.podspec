@@ -7,36 +7,31 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'FrameworkA_Objc_DependencyIssue'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of FrameworkA_Objc_DependencyIssue.'
+	s.name             = 'FrameworkA_Objc_DependencyIssue'
+	s.version          = '0.1.0'
+	s.summary          = 'Demo issue with dependencies whith multiple frameworks.'
+	
+	s.description      = <<-DESC
+	Sample framework that uses CocoaLumberjack. This is to demonstrate and reduce a dependency issue when linking frameworks with xcode 12
+	DESC
+	
+	s.homepage         = 'https://github.com/cweymann/FrameworkA.git'
+	s.license          = { :type => 'MIT', :file => 'LICENSE' }
+	s.author           = { 'Claus Weymann' => 'c.weymann@avm.de' }
+	s.source           = { :git => 'https://github.com/cweymann/FrameworkA.git', :tag => s.version.to_s }
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/Claus Weymann/FrameworkA_Objc_DependencyIssue'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Claus Weymann' => 'c.weymann@avm.de' }
-  s.source           = { :git => 'https://github.com/Claus Weymann/FrameworkA_Objc_DependencyIssue.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'FrameworkA_Objc_DependencyIssue/Classes/**/*'
+  s.ios.deployment_target = '10.0'
+  s.requires_arc = true
   
-  # s.resource_bundles = {
-  #   'FrameworkA_Objc_DependencyIssue' => ['FrameworkA_Objc_DependencyIssue/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.ios.frameworks = 'UIKit', 'LocalAuthentication'
+  
+  s.pod_target_xcconfig = { 'APPLICATION_EXTENSION_API_ONLY' => 'YES' }
+  
+  s.default_subspec = 'Core'
+  
+  s.subspec 'Core' do |co|
+	  co.source_files = 'FrameworkA_Objc_DependencyIssue/Classes/**/*'
+	  co.dependency 'CocoaLumberjack', '~> 3.1'
+  end
+  
 end

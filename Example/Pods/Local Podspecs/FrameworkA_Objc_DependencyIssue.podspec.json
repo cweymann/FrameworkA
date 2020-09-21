@@ -1,9 +1,9 @@
 {
   "name": "FrameworkA_Objc_DependencyIssue",
   "version": "0.1.0",
-  "summary": "A short description of FrameworkA_Objc_DependencyIssue.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Claus Weymann/FrameworkA_Objc_DependencyIssue",
+  "summary": "Demo issue with dependencies whith multiple frameworks.",
+  "description": "Sample framework that uses CocoaLumberjack. This is to demonstrate and reduce a dependency issue when linking frameworks with xcode 12",
+  "homepage": "https://github.com/cweymann/FrameworkA.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,32 @@
     "Claus Weymann": "c.weymann@avm.de"
   },
   "source": {
-    "git": "https://github.com/Claus Weymann/FrameworkA_Objc_DependencyIssue.git",
+    "git": "https://github.com/cweymann/FrameworkA.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "FrameworkA_Objc_DependencyIssue/Classes/**/*"
+  "requires_arc": true,
+  "ios": {
+    "frameworks": [
+      "UIKit",
+      "LocalAuthentication"
+    ]
+  },
+  "pod_target_xcconfig": {
+    "APPLICATION_EXTENSION_API_ONLY": "YES"
+  },
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "FrameworkA_Objc_DependencyIssue/Classes/**/*",
+      "dependencies": {
+        "CocoaLumberjack": [
+          "~> 3.1"
+        ]
+      }
+    }
+  ]
 }

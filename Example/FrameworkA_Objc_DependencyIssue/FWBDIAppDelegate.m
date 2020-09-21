@@ -7,11 +7,15 @@
 //
 
 #import "FWBDIAppDelegate.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+static const DDLogLevel ddLogLevel = DDLogLevelInfo;
 
 @implementation FWBDIAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	[DDLog addLogger:[DDTTYLogger sharedInstance]];
     // Override point for customization after application launch.
     return YES;
 }
