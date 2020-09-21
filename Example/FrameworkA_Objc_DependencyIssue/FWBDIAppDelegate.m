@@ -15,7 +15,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelInfo;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-	[DDLog addLogger:[DDTTYLogger sharedInstance]];
+	[DDLog addLogger:[DDOSLogger sharedInstance]];
     // Override point for customization after application launch.
     return YES;
 }

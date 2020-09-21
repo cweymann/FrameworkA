@@ -7,6 +7,7 @@
 //
 
 #import "FWBDIViewController.h"
+#import "FrameworkA_Objc_DependencyIssue-umbrella.h"
 
 @interface FWBDIViewController ()
 
@@ -18,6 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	[[[Greeter alloc] init] greetLumberjack];
 }
 
 - (void)didReceiveMemoryWarning

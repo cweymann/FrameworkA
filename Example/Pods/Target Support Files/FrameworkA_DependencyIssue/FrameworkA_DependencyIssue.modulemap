@@ -1,6 +1,0 @@
-framework module FrameworkA_DependencyIssue {
-  umbrella header "FrameworkA_DependencyIssue-umbrella.h"
-
-  export *
-  module * { export * }
-}

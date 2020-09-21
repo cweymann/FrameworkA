@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 	s.name             = 'FrameworkA_Objc_DependencyIssue'
-	s.version          = '0.1.0'
+	s.version          = '0.1.2'
 	s.summary          = 'Demo issue with dependencies whith multiple frameworks.'
 	
 	s.description      = <<-DESC
