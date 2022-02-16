@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "FrameworkA_Objc_DependencyIssue.h"
 #import "Greeter.h"
 
 FOUNDATION_EXPORT double FrameworkA_Objc_DependencyIssueVersionNumber;

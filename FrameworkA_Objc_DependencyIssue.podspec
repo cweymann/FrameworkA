@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 	s.name             = 'FrameworkA_Objc_DependencyIssue'
-	s.version          = '0.1.2'
+	s.version          = '0.2.0'
 	s.summary          = 'Demo issue with dependencies whith multiple frameworks.'
 	
 	s.description      = <<-DESC
@@ -29,9 +29,12 @@ Pod::Spec.new do |s|
   
   s.default_subspec = 'Core'
   
+  s.swift_version = '5.0'
+  
   s.subspec 'Core' do |co|
 	  co.source_files = 'FrameworkA_Objc_DependencyIssue/Classes/**/*'
-	  co.dependency 'CocoaLumberjack', '~> 3.1'
+		co.public_header_files = 'FrameworkA_Objc_DependencyIssue/Classes/*.h'
+	  co.dependency 'CocoaLumberjack/Swift'
   end
   
 end

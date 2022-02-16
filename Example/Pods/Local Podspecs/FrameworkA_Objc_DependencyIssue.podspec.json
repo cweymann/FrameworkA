@@ -1,6 +1,6 @@
 {
   "name": "FrameworkA_Objc_DependencyIssue",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "summary": "Demo issue with dependencies whith multiple frameworks.",
   "description": "Sample framework that uses CocoaLumberjack. This is to demonstrate and reduce a dependency issue when linking frameworks with xcode 12",
   "homepage": "https://github.com/cweymann/FrameworkA.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/cweymann/FrameworkA.git",
-    "tag": "0.1.2"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "10.0"
@@ -29,15 +29,18 @@
     "APPLICATION_EXTENSION_API_ONLY": "YES"
   },
   "default_subspecs": "Core",
+  "swift_versions": "5.0",
   "subspecs": [
     {
       "name": "Core",
       "source_files": "FrameworkA_Objc_DependencyIssue/Classes/**/*",
+      "public_header_files": "FrameworkA_Objc_DependencyIssue/Classes/*.h",
       "dependencies": {
-        "CocoaLumberjack": [
-          "~> 3.1"
+        "CocoaLumberjack/Swift": [
+
         ]
       }
     }
-  ]
+  ],
+  "swift_version": "5.0"
 }
