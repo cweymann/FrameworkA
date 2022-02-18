@@ -2,9 +2,9 @@ PODS:
   - CocoaLumberjack/Core (3.7.4)
   - CocoaLumberjack/Swift (3.7.4):
     - CocoaLumberjack/Core
-  - FrameworkA_Objc_DependencyIssue (0.2.0):
-    - FrameworkA_Objc_DependencyIssue/Core (= 0.2.0)
-  - FrameworkA_Objc_DependencyIssue/Core (0.2.0):
+  - FrameworkA_Objc_DependencyIssue (0.3.0):
+    - FrameworkA_Objc_DependencyIssue/Core (= 0.3.0)
+  - FrameworkA_Objc_DependencyIssue/Core (0.3.0):
     - CocoaLumberjack/Swift
 
 DEPENDENCIES:
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
-  FrameworkA_Objc_DependencyIssue: 0778a3ac4ec7d6b93ddc30d57eb3c19e1ffa3963
+  FrameworkA_Objc_DependencyIssue: c8655e6244143edf4fa6c8ba9329e8526070a901
 
-PODFILE CHECKSUM: 637de4b2cc60a486f4e0d4e3fa411b0927f2dc0e
+PODFILE CHECKSUM: e908fa5a0bf3eb83a6e450a90de622dc4fe8afdc
 
 COCOAPODS: 1.11.2

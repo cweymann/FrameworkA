@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 	s.name             = 'FrameworkA_Objc_DependencyIssue'
-	s.version          = '0.2.0'
+	s.version          = '0.3.0'
 	s.summary          = 'Demo issue with dependencies whith multiple frameworks.'
 	
 	s.description      = <<-DESC
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 	s.author           = { 'Claus Weymann' => 'c.weymann@avm.de' }
 	s.source           = { :git => 'https://github.com/cweymann/FrameworkA.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '14.0'
   s.requires_arc = true
   
   s.ios.frameworks = 'UIKit', 'LocalAuthentication'

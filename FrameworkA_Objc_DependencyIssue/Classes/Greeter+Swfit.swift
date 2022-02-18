@@ -9,7 +9,7 @@ import Foundation
 import CocoaLumberjack
 
 public extension Greeter {
-	@objc func greetSwift() {
+	func greetSwift() {
 		DDLogInfo("Hello Swift!");
 	}
 }

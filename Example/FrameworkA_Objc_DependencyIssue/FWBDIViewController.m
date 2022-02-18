@@ -19,10 +19,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 	Greeter *greeter = [[Greeter alloc] init];
 	[greeter greetLumberjack];
-	[greeter greetSwift];
 }
 
 - (void)didReceiveMemoryWarning
